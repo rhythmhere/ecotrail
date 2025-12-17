@@ -1,0 +1,152 @@
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: white;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container */
+.container {
+    background: #fff;
+    width: 450px;
+    padding: 0;
+    margin: 50px auto;
+    border-radius: 12px;
+    box-shadow: 0 20px 35px rgba(36, 33, 33, 0.2);
+    overflow: hidden;
+    min-height: 600px;
+}
+
+/* Blue header box */
+.form-title {
+    background: rgb(37, 99, 235);
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 1.4rem;
+    margin-bottom: 1.7rem;
+}
+
+/* Form styling */
+form {
+    padding: 0 2rem 2rem;
+}
+
+.input-group {
+    padding: 20px 0;
+    position: relative;
+}
+
+.input-group i {
+    position: absolute;
+    top: 35px;
+    left: 6px;
+    color: rgb(37, 99, 235);
+    font-size: 18px;
+}
+
+/* Input box */
+input {
+    width: 100%;
+    padding: 12px 10px 12px 28px;
+    font-size: 17px;
+    border: 2px solid #2563eb
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid rgb(37, 99, 235);
+}
+
+/* Static placeholder text */
+input::placeholder {
+    color: #999;
+}
+
+/* Static label */
+label {
+    position: absolute;
+    left: 28px;
+    top: 0px;
+    color: #757575;
+    font-size: 15px;
+    background: white;
+    padding: 0 4px;
+}
+
+/* Remove float/move behavior */
+input:focus ~ label,
+input:not(:placeholder-shown) ~ label {
+    font-size: 15px;
+    color: #757575;
+}
+
+/* Don't move icon */
+input:focus ~ i,
+input:not(:placeholder-shown) ~ i {
+    top: 14px;
+    font-size: 18px;
+}
+
+/* Recover link */
+.recover {
+    text-align: right;
+    font-size: 1.1rem;
+    margin: 12px 0;
+}
+
+.recover a {
+    text-decoration: none;
+    color: rgb(37, 99, 235);
+}
+
+.recover a:hover {
+    text-decoration: underline;
+    color: #3454a0;
+}
+
+/* Button styling */
+.btn {
+    font-size: 1.25rem;
+    padding: 12px 0;
+    border-radius: 6px;
+    border: none;
+    width: 100%;
+    background: rgb(37, 99, 235);
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #2563eb;
+}
+
+/* Bottom links */
+.links {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 4rem;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    color: rgb(37, 99, 235);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    text-decoration: underline;
+    color: #3454a0;
+}
